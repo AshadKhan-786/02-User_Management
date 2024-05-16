@@ -1,0 +1,35 @@
+server:
+  port: 9090
+spring:
+  application:
+    name: 02-User_Mgmt-App
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 1234
+    url: jdbc:mysql://localhost:3306/project
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mail:
+    host: smtp.gmail.com
+    password: rgra sbxh qono kgcu
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    username: msploit@gmail.com
+
+app:
+  messages:
+    dupEmail: Duplicate Email
+    regSucc: User Registered
+    regFail: Registration Failed
+    invalidCredentials: Invalid Email or Password
+    pwdMatchErr: New Password and Confirm Password should be same
+    pwdUpdateErr: Password Update Failed
+    oldPwdErr: Given Old Password is Wrong
